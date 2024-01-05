@@ -113,7 +113,8 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color:hsla(277, 80%, 43%, 0.4);
+    background-color: var(--Soft-violet-accent);
+    mix-blend-mode: multiply;
     z-index: 1; 
 }
 
