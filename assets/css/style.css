@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root{
+/* Global Variables */
+:root {
     /* Colors */
 
     /* Primary */
@@ -28,7 +29,7 @@
     --Font-size: 15px;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,29 +39,33 @@ body{
     background-color: var(--Very-dark-blue-main-background);
 }
 
-.container{
+/* Main Container */
+.container {
     display: flex;
     width: 70vw;
     background-color: var(--Dark-desaturated-blue-card-background);
     border-radius: 20px;
 }
 
-.part-one{
+/* Text Section */
+.part-one {
     order: 1;
     width: 50%;
     height: 500px;
     padding: 5%;
 }
 
-.heading h1{
+/* Header */
+.heading h1 {
     font-size: 38px;
     font-family: var(--font-family-Lexend-Deca);
 }
-.heading span{
+
+.heading span {
     color: var(--Soft-violet-accent);
 }
 
-.paragraph p{
+.paragraph p {
     margin: 30px 0;
     padding: 5px 0;
     font-size: 18px;
@@ -68,7 +73,7 @@ body{
     color: var(--Slightly-transparent-white-main-paragraph);
 }
 
-.section{
+.section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -76,26 +81,28 @@ body{
     margin-top: 20%;
 }
 
-.section-part{
+.section-part {
     display: flex;
     flex-direction: column;
 }
 
-.number{
+.number {
     font-family: var(--font-family-Inter);
     font-weight: var(--font-wght-700);
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-.text{
+.text {
     font-family: var(--font-family-Inter);
     font-weight: var(--font-wght-400);
     text-transform: uppercase;
     font-size: 13px;
     color: var(--Slightly-transparent-white-stat-headings);
 }
-.part-two{
+
+/* Image Section */
+.part-two {
     position: relative;
     order: 2;
     width: 50%;
@@ -103,10 +110,11 @@ body{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background: url('../images/image-header-desktop.jpg') no-repeat center center/cover;
-    overflow: hidden; 
+    overflow: hidden;
 
 }
-.part-two::before{
+
+.part-two::before {
     content: "";
     position: absolute;
     top: 0;
@@ -115,27 +123,37 @@ body{
     left: 0;
     background-color: var(--Soft-violet-accent);
     mix-blend-mode: multiply;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
-@media(max-width: 768px){
-    .container{
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container {
         margin-top: 20%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 80%;
     }
-    .part-one{
+
+    .part-one {
         order: 2;
         height: auto;
         width: 80%;
         padding: 10px;
     }
-    .part-two{
+
+    .part-two {
         position: relative;
         order: 1;
         width: 100%;
@@ -144,38 +162,42 @@ body{
         border-top-left-radius: 20px;
         border-bottom-right-radius: 0;
         background: url('../images/image-header-mobile.jpg') no-repeat center center/cover;
-        overflow: hidden; 
-    
+        overflow: hidden;
+
     }
-    .part-two::before{
+
+    .part-two::before {
         content: "";
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-color:hsla(277, 80%, 43%, 0.4);
-        z-index: 1; 
+        z-index: 1;
     }
-    .heading h1{
+
+    .heading h1 {
         margin-top: 20px;
         text-align: center;
         font-size: 23px;
         font-family: var(--font-family-Lexend-Deca);
     }
-    .paragraph p{
+
+    .paragraph p {
         text-align: center;
         font-size: 15px;
         line-height: 1.5rem;
     }
-    .section{
+
+    .section {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
         gap: 35px;
         margin-bottom: 20px;
     }
-    .section-part{
+
+    .section-part {
         justify-content: center;
         align-items: center;
     }
