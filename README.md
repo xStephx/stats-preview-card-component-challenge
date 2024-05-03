@@ -9,7 +9,10 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ![](./assets/images/screenshot.PNG)
 
-You can check it out live [here](https://xstephx.github.io/stats-preview-card-component-challenge/).
+### Links
+
+- Solution URL: [here](https://www.frontendmentor.io/solutions/solution-stats-preview-card-component-dv6dCwhTV-)
+- Live Site URL: [here](https://xstephx.github.io/stats-preview-card-component-challenge/)
 
 ## My process
 
